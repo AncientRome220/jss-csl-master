@@ -3,15 +3,21 @@
 
   <info>
     <title>Juris-Mで歴史学（日本語）</title>
-    <id>https://github.com/keisato0/jss-csl/jss-history</id>
-    <link href="https://github.com/keisato0/jss-csl/blob/master/jss-history.csl" rel="self"/>
-    <link href="http://www.gakkai.ne.jp/jss/bulletin/guide.php" rel="documentation"/>
+    <id>https://github.com/AncientRome220/jss-csl-master/jss-history</id>
+    <link href="https://github.com/AncientRome220/jss-csl-master/blob/main/jss-history.csl" rel="self"/>
+    <link href="https://github.com/AncientRome220/jss-csl-master" rel="documentation"/>
     <author>
+      <name>Shunya Fujimoto (Kyoto University)</name>
+      <email>fujimoto.syunnya.75r@st.kyoto-u.ac.jp</email>
+    </author>
+    <contributor>
       <name>Jonathan Lewis (Hitotsubashi University)</name>
       <email>jonathan_lewis@mac.com</email>
+    </contributor>
+    <contributor>
       <name>Kei Sato (Kyoto University)</name>
       <email>sato.kei.37m@kyoto-u.jp</email>
-    </author>
+    </contributor>
     <contributor>
       <name>Frank Bennett</name>
       <email>biercenator@gmail.com</email>
@@ -19,7 +25,7 @@
     <category citation-format="author-date"/>
     <category field="history"/>
     <summary>A style for citations when writing in Japanese for history publications. Japanese bibliography entries for journal articles and books follow a history-oriented format.</summary>
-    <updated>2026-04-03T00:00:00+00:00</updated>
+    <updated>2026-04-04T00:00:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   
@@ -144,7 +150,6 @@
                 <names variable="editor"/>
               </substitute>
             </names>
-            <text macro="recipient"/>
           </else>
         </choose>
         <text macro="recipient"/>
@@ -189,7 +194,7 @@
     <choose>
       <if type="chapter paper-conference" match="any">
         <names variable="container-author editor" delimiter="・">
-          <name and="text" delimiter="・"/>
+          <name delimiter="・"/>
           <label form="short" plural="contextual" prefix=""/>
         </names>
       </if>
