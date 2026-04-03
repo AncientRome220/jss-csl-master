@@ -48,6 +48,42 @@
       <term name="accessed" form="long">取得</term>
     </terms>
   </locale>
+
+  <locale xml:lang="de-DE">
+    <style-options punctuation-in-quote="true"/>
+    <terms>
+      <term name="translator" form="short">Übers.</term>
+      <term name="editor" form="short">Hrsg.</term>
+      <term name="accessed" form="long">Abgerufen</term>
+    </terms>
+  </locale>
+
+  <locale xml:lang="fr-FR">
+    <style-options punctuation-in-quote="true"/>
+    <terms>
+      <term name="translator" form="short">trad.</term>
+      <term name="editor" form="short">éd.</term>
+      <term name="accessed" form="long">Consulté</term>
+    </terms>
+  </locale>
+
+  <locale xml:lang="it-IT">
+    <style-options punctuation-in-quote="true"/>
+    <terms>
+      <term name="translator" form="short">trad.</term>
+      <term name="editor" form="short">a cura di</term>
+      <term name="accessed" form="long">Accesso</term>
+    </terms>
+  </locale>
+
+  <locale xml:lang="es-ES">
+    <style-options punctuation-in-quote="true"/>
+    <terms>
+      <term name="translator" form="short">trad.</term>
+      <term name="editor" form="short">ed.</term>
+      <term name="accessed" form="long">Recuperado</term>
+    </terms>
+  </locale>
   
   <macro name="contributors-半角">
     <group delimiter=". ">
@@ -202,7 +238,239 @@
       </substitute>
     </names>
   </macro>
-  
+
+  <!-- German language macros -->
+  <macro name="contributors-de">
+    <group delimiter=". ">
+      <group delimiter=" ">
+        <choose>
+          <if context="alternative" match="none">
+            <names variable="author">
+              <name name-as-sort-order="first" sort-separator=", " delimiter=" und " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="editor"/>
+                <names variable="translator"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </if>
+          <else>
+            <names variable="author">
+              <name delimiter=" und " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="translator">
+                  <name delimiter=" und " delimiter-precedes-last="never"/>
+                  <label form="short" plural="contextual" prefix=", "/>
+                </names>
+                <names variable="editor"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </else>
+        </choose>
+        <text macro="recipient"/>
+      </group>
+    </group>
+  </macro>
+
+  <macro name="secondary-contributors-de">
+    <choose>
+      <if type="chapter paper-conference" match="none">
+        <names variable="editor translator">
+          <label form="verb" text-case="capitalize-first" suffix=" " plural="never"/>
+          <name delimiter=" und " delimiter-precedes-last="never"/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="container-contributors-de">
+    <choose>
+      <if type="chapter paper-conference" match="any">
+        <names variable="container-author editor" delimiter=", ">
+          <name delimiter=" und " delimiter-precedes-last="never"/>
+          <label form="short" plural="contextual" prefix=" "/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
+  <!-- French language macros -->
+  <macro name="contributors-fr">
+    <group delimiter=". ">
+      <group delimiter=" ">
+        <choose>
+          <if context="alternative" match="none">
+            <names variable="author">
+              <name name-as-sort-order="first" sort-separator=", " delimiter=" et " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="editor"/>
+                <names variable="translator"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </if>
+          <else>
+            <names variable="author">
+              <name delimiter=" et " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="translator">
+                  <name delimiter=" et " delimiter-precedes-last="never"/>
+                  <label form="short" plural="contextual" prefix=", "/>
+                </names>
+                <names variable="editor"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </else>
+        </choose>
+        <text macro="recipient"/>
+      </group>
+    </group>
+  </macro>
+
+  <macro name="secondary-contributors-fr">
+    <choose>
+      <if type="chapter paper-conference" match="none">
+        <names variable="editor translator">
+          <label form="verb" text-case="capitalize-first" suffix=" " plural="never"/>
+          <name delimiter=" et " delimiter-precedes-last="never"/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="container-contributors-fr">
+    <choose>
+      <if type="chapter paper-conference" match="any">
+        <names variable="container-author editor" delimiter=", ">
+          <name delimiter=" et " delimiter-precedes-last="never"/>
+          <label form="short" plural="contextual" prefix=" "/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
+  <!-- Italian language macros -->
+  <macro name="contributors-it">
+    <group delimiter=". ">
+      <group delimiter=" ">
+        <choose>
+          <if context="alternative" match="none">
+            <names variable="author">
+              <name name-as-sort-order="first" sort-separator=", " delimiter=" e " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="editor"/>
+                <names variable="translator"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </if>
+          <else>
+            <names variable="author">
+              <name delimiter=" e " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="translator">
+                  <name delimiter=" e " delimiter-precedes-last="never"/>
+                  <label form="short" plural="contextual" prefix=", "/>
+                </names>
+                <names variable="editor"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </else>
+        </choose>
+        <text macro="recipient"/>
+      </group>
+    </group>
+  </macro>
+
+  <macro name="secondary-contributors-it">
+    <choose>
+      <if type="chapter paper-conference" match="none">
+        <names variable="editor translator">
+          <label form="verb" text-case="capitalize-first" suffix=" " plural="never"/>
+          <name delimiter=" e " delimiter-precedes-last="never"/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="container-contributors-it">
+    <choose>
+      <if type="chapter paper-conference" match="any">
+        <names variable="container-author editor" delimiter=", ">
+          <name delimiter=" e " delimiter-precedes-last="never"/>
+          <label form="short" plural="contextual" prefix=" "/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
+  <!-- Spanish language macros -->
+  <macro name="contributors-es">
+    <group delimiter=". ">
+      <group delimiter=" ">
+        <choose>
+          <if context="alternative" match="none">
+            <names variable="author">
+              <name name-as-sort-order="first" sort-separator=", " delimiter=" y " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="editor"/>
+                <names variable="translator"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </if>
+          <else>
+            <names variable="author">
+              <name delimiter=" y " delimiter-precedes-last="never"/>
+              <label form="short" plural="contextual" prefix=" "/>
+              <substitute>
+                <names variable="translator">
+                  <name delimiter=" y " delimiter-precedes-last="never"/>
+                  <label form="short" plural="contextual" prefix=", "/>
+                </names>
+                <names variable="editor"/>
+                <text macro="title-半角"/>
+              </substitute>
+            </names>
+          </else>
+        </choose>
+        <text macro="recipient"/>
+      </group>
+    </group>
+  </macro>
+
+  <macro name="secondary-contributors-es">
+    <choose>
+      <if type="chapter paper-conference" match="none">
+        <names variable="editor translator">
+          <label form="verb" text-case="capitalize-first" suffix=" " plural="never"/>
+          <name delimiter=" y " delimiter-precedes-last="never"/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="container-contributors-es">
+    <choose>
+      <if type="chapter paper-conference" match="any">
+        <names variable="container-author editor" delimiter=", ">
+          <name delimiter=" y " delimiter-precedes-last="never"/>
+          <label form="short" plural="contextual" prefix=" "/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+
   <macro name="interviewer">
     <names variable="interviewer" delimiter=", ">
       <label form="verb" text-case="capitalize-first" suffix=" "/>
@@ -902,6 +1170,222 @@
           <text macro="description-半角"/>
           <text macro="secondary-contributors-半角"/>
           <text macro="container-contributors-半角"/>
+          <text macro="container-title-半角"/>
+          <text macro="edition-半角"/>
+          <text macro="collection-title-半角"/>
+          <text macro="precise-date-半角"/>
+          <choose>
+          	<if type="article-journal" match="none">
+          		<text macro="publisher-半角"/>
+          	</if>
+          </choose>
+          <text macro="location-of-chapter-半角"/>
+          <text macro="locators-comma-半角"/>
+          <choose>
+          	<if type="book chapter" match="none">
+          		<text macro="access-半角"/>
+          	</if>
+          	<else-if type="article-journal">
+          		<choose>
+          		<if variable="page" match="none">
+          		<text macro="access-半角"/>
+          		</if>
+          		<else></else>
+          		</choose>
+          	</else-if>
+          	<else></else>
+          </choose>
+        </group>
+        <choose>
+          <if variable="alt-translator">
+            <alternative prefix="(" suffix=")">
+              <alternative-text/>
+            </alternative>
+          </if>
+          <else>
+            <alternative>
+              <group delimiter=" ">
+                <text value="Reprinted in:"/>
+                <alternative-text/>
+              </group>
+            </alternative>
+          </else>
+        </choose>
+      </group>
+    </layout>
+
+    <!-- German language layout -->
+    <layout locale="de">
+      <group delimiter=" ">
+        <group delimiter=", " suffix=".">
+          <text macro="contributors-de"/>
+          <text macro="year"/>
+          <text macro="title-半角"/>
+          <text macro="description-半角"/>
+          <text macro="secondary-contributors-de"/>
+          <text macro="container-contributors-de"/>
+          <text macro="container-title-半角"/>
+          <text macro="edition-半角"/>
+          <text macro="collection-title-半角"/>
+          <text macro="precise-date-半角"/>
+          <choose>
+          	<if type="article-journal" match="none">
+          		<text macro="publisher-半角"/>
+          	</if>
+          </choose>
+          <text macro="location-of-chapter-半角"/>
+          <text macro="locators-comma-半角"/>
+          <choose>
+          	<if type="book chapter" match="none">
+          		<text macro="access-半角"/>
+          	</if>
+          	<else-if type="article-journal">
+          		<choose>
+          		<if variable="page" match="none">
+          		<text macro="access-半角"/>
+          		</if>
+          		<else></else>
+          		</choose>
+          	</else-if>
+          	<else></else>
+          </choose>
+        </group>
+        <choose>
+          <if variable="alt-translator">
+            <alternative prefix="(" suffix=")">
+              <alternative-text/>
+            </alternative>
+          </if>
+          <else>
+            <alternative>
+              <group delimiter=" ">
+                <text value="Reprinted in:"/>
+                <alternative-text/>
+              </group>
+            </alternative>
+          </else>
+        </choose>
+      </group>
+    </layout>
+
+    <!-- French language layout -->
+    <layout locale="fr">
+      <group delimiter=" ">
+        <group delimiter=", " suffix=".">
+          <text macro="contributors-fr"/>
+          <text macro="year"/>
+          <text macro="title-半角"/>
+          <text macro="description-半角"/>
+          <text macro="secondary-contributors-fr"/>
+          <text macro="container-contributors-fr"/>
+          <text macro="container-title-半角"/>
+          <text macro="edition-半角"/>
+          <text macro="collection-title-半角"/>
+          <text macro="precise-date-半角"/>
+          <choose>
+          	<if type="article-journal" match="none">
+          		<text macro="publisher-半角"/>
+          	</if>
+          </choose>
+          <text macro="location-of-chapter-半角"/>
+          <text macro="locators-comma-半角"/>
+          <choose>
+          	<if type="book chapter" match="none">
+          		<text macro="access-半角"/>
+          	</if>
+          	<else-if type="article-journal">
+          		<choose>
+          		<if variable="page" match="none">
+          		<text macro="access-半角"/>
+          		</if>
+          		<else></else>
+          		</choose>
+          	</else-if>
+          	<else></else>
+          </choose>
+        </group>
+        <choose>
+          <if variable="alt-translator">
+            <alternative prefix="(" suffix=")">
+              <alternative-text/>
+            </alternative>
+          </if>
+          <else>
+            <alternative>
+              <group delimiter=" ">
+                <text value="Reprinted in:"/>
+                <alternative-text/>
+              </group>
+            </alternative>
+          </else>
+        </choose>
+      </group>
+    </layout>
+
+    <!-- Italian language layout -->
+    <layout locale="it">
+      <group delimiter=" ">
+        <group delimiter=", " suffix=".">
+          <text macro="contributors-it"/>
+          <text macro="year"/>
+          <text macro="title-半角"/>
+          <text macro="description-半角"/>
+          <text macro="secondary-contributors-it"/>
+          <text macro="container-contributors-it"/>
+          <text macro="container-title-半角"/>
+          <text macro="edition-半角"/>
+          <text macro="collection-title-半角"/>
+          <text macro="precise-date-半角"/>
+          <choose>
+          	<if type="article-journal" match="none">
+          		<text macro="publisher-半角"/>
+          	</if>
+          </choose>
+          <text macro="location-of-chapter-半角"/>
+          <text macro="locators-comma-半角"/>
+          <choose>
+          	<if type="book chapter" match="none">
+          		<text macro="access-半角"/>
+          	</if>
+          	<else-if type="article-journal">
+          		<choose>
+          		<if variable="page" match="none">
+          		<text macro="access-半角"/>
+          		</if>
+          		<else></else>
+          		</choose>
+          	</else-if>
+          	<else></else>
+          </choose>
+        </group>
+        <choose>
+          <if variable="alt-translator">
+            <alternative prefix="(" suffix=")">
+              <alternative-text/>
+            </alternative>
+          </if>
+          <else>
+            <alternative>
+              <group delimiter=" ">
+                <text value="Reprinted in:"/>
+                <alternative-text/>
+              </group>
+            </alternative>
+          </else>
+        </choose>
+      </group>
+    </layout>
+
+    <!-- Spanish language layout -->
+    <layout locale="es">
+      <group delimiter=" ">
+        <group delimiter=", " suffix=".">
+          <text macro="contributors-es"/>
+          <text macro="year"/>
+          <text macro="title-半角"/>
+          <text macro="description-半角"/>
+          <text macro="secondary-contributors-es"/>
+          <text macro="container-contributors-es"/>
           <text macro="container-title-半角"/>
           <text macro="edition-半角"/>
           <text macro="collection-title-半角"/>
