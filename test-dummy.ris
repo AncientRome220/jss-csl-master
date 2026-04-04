@@ -1,0 +1,150 @@
+TY  - JOUR
+AU  - テスト太郎
+AU  - テスト花子
+PY  - 2024
+TI  - これはダミーのテスト論文です
+SO  - テスト雑誌
+VL  - 42
+SP  - 100
+EP  - 120
+LA  - ja
+ER  -
+
+TY  - BOOK
+AU  - Test Mueller
+AU  - Test Schmidt
+PY  - 2023
+TI  - Dies ist ein Test-Buch
+PB  - Test Verlag
+LA  - de
+ER  -
+
+TY  - CHAP
+AU  - Test Dupont
+ED  - Test Martin
+PY  - 2022
+TI  - Ceci est un article de test
+BT  - Livre de test avec chapitres
+PB  - Éditions Test
+SP  - 45
+EP  - 67
+LA  - fr
+ER  -
+
+TY  - BOOK
+AU  - Test Rossi
+AU  - Test Bianchi
+PY  - 2024
+TI  - Questo è un libro di prova
+PB  - Casa Editrice Test
+LA  - it
+ER  -
+
+TY  - JOUR
+AU  - Test García
+AU  - Test López
+PY  - 2023
+TI  - Este es un artículo de prueba
+SO  - Revista de Prueba
+VL  - 15
+SP  - 23
+EP  - 38
+LA  - es
+ER  -
+
+TY  - BOOK
+AU  - テスト次郎
+AU  - テスト三郎
+PY  - 2024
+TI  - これはダミーの本です
+PB  - テスト出版社
+LA  - ja
+ER  -
+
+TY  - BOOK
+AU  - Test Smith
+AU  - Test Jones
+PY  - 2023
+TI  - This is a Test Book in English
+PB  - Test Publishers
+LA  - en
+ER  -
+
+TY  - THES
+AU  - テスト学生
+PY  - 2024
+TI  - これはダミーの学位論文です
+UN  - テスト大学
+LA  - ja
+ER  -
+
+TY  - NEWS
+AU  - テスト記者
+PY  - 2024/04/01
+TI  - これはダミーのテスト新聞記事です
+SO  - テスト日本新聞
+LA  - ja
+ER  -
+
+TY  - MANSCPT
+AU  - テスト所蔵者
+PY  - 1850
+TI  - テスト古文書
+M1  - テスト文書館
+M2  - テスト請求番号001
+LA  - ja
+ER  -
+
+TY  - BOOK
+ED  - テスト編集太郎
+ED  - テスト編集花子
+PY  - 2024
+TI  - ダミーの編集本です
+PB  - テスト出版社
+LA  - ja
+ER  -
+
+TY  - BOOK
+ED  - Test Herausgeber Mueller
+ED  - Test Herausgeber Schmidt
+PY  - 2024
+TI  - Dies ist ein bearbeitetes Test-Buch
+PB  - Test Verlag
+LA  - de
+ER  -
+
+TY  - BOOK
+ED  - Test Éditeur Dupont
+ED  - Test Éditeur Martin
+PY  - 2024
+TI  - Ceci est un livre édité de test
+PB  - Éditions Test
+LA  - fr
+ER  -
+
+TY  - BOOK
+ED  - Test Curatore Rossi
+ED  - Test Curatore Bianchi
+PY  - 2024
+TI  - Questo è un libro a cura di test
+PB  - Casa Editrice Test
+LA  - it
+ER  -
+
+TY  - BOOK
+ED  - Test Editor García
+ED  - Test Editor López
+PY  - 2024
+TI  - Este es un libro editado de prueba
+PB  - Editorial Test
+LA  - es
+ER  -
+
+TY  - BOOK
+ED  - Test Smith
+ED  - Test Jones
+PY  - 2024
+TI  - This is an Edited Test Book
+PB  - Test Publishers
+LA  - en
+ER  -
