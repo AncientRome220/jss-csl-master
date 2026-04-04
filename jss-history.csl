@@ -808,7 +808,7 @@
             <text macro="contributors-全角"/>
             <text macro="year"/>
           </group>
-          <group>
+          <group delimiter="">
             <text macro="title-全角"/>
             <text macro="publisher-全角"/>
           </group>
