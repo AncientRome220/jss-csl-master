@@ -1,12 +1,14 @@
 # Juris-Mで歴史学
 
-[jss-lewis-sato.csl](jss-lewis-sato.csl)　[jss-history.csl](jss-history.csl)　[jss-history-zotero.csl](jss-history-zotero.csl)
+[jss-lewis-sato.csl](jss-lewis-sato.csl)　[jss-history.csl](jss-history.csl)　[jss-history-zotero.csl](jss-history-zotero.csl)　[test-dummy.ris](test-dummy.ris)　[test-dummy.md](test-dummy.md)
 
 ZoteroおよびJuris-Mで使用できるスタイルファイルです。`jss-history.csl` は Juris-M / CSL-M 向け、`jss-history-zotero.csl` は Zotero 向けです。
 
 - **jss-lewis-sato.csl** — 『社会学評論』スタイルガイドに準拠した引用・文献一覧スタイルです。
 - **jss-history.csl** — 歴史学の日本語論文向けスタイルです。Juris-M / CSL-M 向けに、日本語文献の歴史学向け文献一覧形式と、多言語文献の言語別レイアウトを備えています。
 - **jss-history-zotero.csl** — Zotero 向けの互換版です。日本語文献は歴史学向け形式で出力し、非日本語文献は単一のローマ字系レイアウトにまとめて出力します。
+- **test-dummy.ris** — 動作確認用のRISサンプルデータです。日本語・英語・ドイツ語・フランス語・イタリア語・スペイン語の文献例を含みます。
+- **test-dummy.md** — `test-dummy.ris` をZoteroでスタイルに通したときの出力例です。参考文献一覧の見た目をすぐ確認できます。
 
 | 文献種別 | Zoteroの文献タイプ | 出力形式 |
 |---|---|---|
@@ -63,6 +65,15 @@ ZoteroおよびJuris-Mで使用できるスタイルファイルです。`jss-hi
   https://github.com/keisato0/jss-csl
 - 今回の作成者は藤本俊哉です。
 - 本リポジトリに含まれるすべての誤りは、藤本俊哉に帰属します。
+
+### テスト用サンプル
+
+リポジトリには、スタイルの確認に使えるサンプルファイルも含めています。
+
+- [test-dummy.ris](test-dummy.ris) は、雑誌論文・単著・編著・論文集所収論文・学位論文・新聞記事・史料・古文書を含むテスト用RISデータです。
+- [test-dummy.md](test-dummy.md) は、そのRISデータをもとに生成した参考文献一覧のサンプルです。
+
+スタイルを読み込んだあとに `test-dummy.ris` を Zotero または Juris-M に取り込み、出力結果が `test-dummy.md` とおおむね一致するかを確認すると、基本的な動作確認ができます。
 
 ### フォーク元からの変更点
 
