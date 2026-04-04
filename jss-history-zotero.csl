@@ -2,9 +2,9 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.1mlz1" class="in-text" default-locale="en-US" page-range-format="chicago">
 
   <info>
-    <title>Juris-Mで歴史学（日本語）</title>
-    <id>https://github.com/AncientRome220/jss-csl-master/jss-history</id>
-    <link href="https://github.com/AncientRome220/jss-csl-master/blob/main/jss-history.csl" rel="self"/>
+    <title>Zoteroで歴史学（日本語）</title>
+    <id>https://github.com/AncientRome220/jss-csl-master/blob/main/jss-history-zotero.csl</id>
+    <link href="https://github.com/AncientRome220/jss-csl-master/blob/main/jss-history-zotero.csl" rel="self"/>
     <link href="https://github.com/AncientRome220/jss-csl-master" rel="documentation"/>
     <author>
       <name>Shunya Fujimoto (Kyoto University)</name>
@@ -24,7 +24,7 @@
     </contributor>
     <category citation-format="author-date"/>
     <category field="history"/>
-    <summary>A style for citations when writing in Japanese for history publications. Japanese bibliography entries for journal articles and books follow a history-oriented format.</summary>
+    <summary>A Zotero-friendly history style for Japanese writing. Japanese entries use the history-specific bibliography format, and all non-Japanese entries use a unified Roman-script fallback.</summary>
     <updated>2026-04-04T00:00:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
@@ -55,42 +55,6 @@
     </terms>
   </locale>
 
-  <locale xml:lang="de-DE">
-    <style-options punctuation-in-quote="true"/>
-    <terms>
-      <term name="translator" form="short">Übers.</term>
-      <term name="editor" form="short">Hrsg.</term>
-      <term name="accessed" form="long">Abgerufen</term>
-    </terms>
-  </locale>
-
-  <locale xml:lang="fr-FR">
-    <style-options punctuation-in-quote="true"/>
-    <terms>
-      <term name="translator" form="short">trad.</term>
-      <term name="editor" form="short">éd.</term>
-      <term name="accessed" form="long">Consulté</term>
-    </terms>
-  </locale>
-
-  <locale xml:lang="it-IT">
-    <style-options punctuation-in-quote="true"/>
-    <terms>
-      <term name="translator" form="short">trad.</term>
-      <term name="editor" form="short">a cura di</term>
-      <term name="accessed" form="long">Accesso</term>
-    </terms>
-  </locale>
-
-  <locale xml:lang="es-ES">
-    <style-options punctuation-in-quote="true"/>
-    <terms>
-      <term name="translator" form="short">trad.</term>
-      <term name="editor" form="short">ed.</term>
-      <term name="accessed" form="long">Recuperado</term>
-    </terms>
-  </locale>
-  
   <macro name="contributors-半角">
     <group delimiter=". ">
       <group delimiter=" ">
